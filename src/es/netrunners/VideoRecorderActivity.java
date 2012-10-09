@@ -32,7 +32,6 @@ public class VideoRecorderActivity extends Activity {
 
 	public void startRecording(View view) {
 		Intent intent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE);
-		// intent.putExtra(MediaStore.EXTRA_OUTPUT, outputFileUri);
 		intent.putExtra(MediaStore.EXTRA_VIDEO_QUALITY, HIGH_VIDEO_QUALITY);
 		startActivityForResult(intent, RECORD_VIDEO);
 
